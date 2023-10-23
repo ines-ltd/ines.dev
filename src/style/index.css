@@ -1,0 +1,10 @@
+@import './reset.css';
+@import './theme.css';
+@import './typography.css';
+@import './utilities.css';
+
+body {
+  background-color: var(--c-background);
+  color: var(--c-text);
+  overflow: auto;
+}

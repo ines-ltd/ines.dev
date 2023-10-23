@@ -1,0 +1,6 @@
+:root {
+  --c-background: hsl(0, 0%, 15%);
+  --c-text: hsl(0, 0%, 98%);
+  --c-highlight: hsl(180, 100%, 50%);
+  --c-highlight-trans: hsla(180, 100%, 50%, 0.1);
+}

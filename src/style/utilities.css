@@ -1,0 +1,19 @@
+/* Flex */
+.flex {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* Color */
+.text-highlight {
+  color: var(--c-highlight);
+}
