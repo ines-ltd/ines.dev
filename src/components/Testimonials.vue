@@ -1,12 +1,12 @@
 <script setup>
-import { computed, onMounted, ref } from 'vue'
+import { computed, ref } from 'vue'
 
 const items = [
   {
     title: 'Barry Weaver',
     role: 'Head of Product',
     org: 'Voneous',
-    img: 'voneus.jpg',
+    img: 'voneus.png',
     content:
       "Ines Development was instrumental in the successful launch of our gigabit wireless access service. Their strategic planning, data management, and operational support were key factors in our success. We couldn't have done it without him!"
   },
@@ -14,7 +14,7 @@ const items = [
     title: 'Michael Armitage',
     role: 'COO',
     org: 'Broadway Partners Ltd',
-    img: 'broadway.jpg',
+    img: 'broadway.png',
     content:
       'Josh was a fantastic asset to our business, he helped improve and formalise our data strategy, while also assisting with our implementation of a reporting system. What started as a 3-month contract became 13-months as we were so impressed we outsourced our Head of Data position to him'
   }

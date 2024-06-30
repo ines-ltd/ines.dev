@@ -89,7 +89,7 @@ h2 {
 
 .card {
   box-sizing: border-box;
-  width: 280px;
+  width: 250px;
   border-radius: 8px;
   background-color: var(--c-background-2);
   padding: 1rem;

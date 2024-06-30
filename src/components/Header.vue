@@ -1,4 +1,5 @@
 <script setup>
+import { ref, onMounted } from 'vue'
 import Button from './Button.vue'
 
 const props = defineProps({
@@ -9,11 +10,24 @@ const props = defineProps({
 })
 
 const links = ['Services', 'Team', 'Testimonials']
+
+let y = ref(0)
+
+onMounted(() => {
+  window.addEventListener('scroll', () => {
+    y.value = window.scrollY
+  })
+})
 </script>
 
 <template>
   <header>
-    <div class="navbar">
+    <div
+      :class="{
+        navbar: true,
+        'navbar--border': y > 0
+      }"
+    >
       <div class="title">
         <img class="logo" src="/logo.svg" alt="" />
         <span class="title-text">{{ props.title }}</span>
@@ -27,7 +41,9 @@ const links = ['Services', 'Team', 'Testimonials']
         >
           {{ link }}
         </a>
-        <Button>Get in touch</Button>
+        <a href="#contact">
+          <Button>Get in touch</Button>
+        </a>
       </div>
     </div>
   </header>
@@ -41,6 +57,7 @@ header {
   width: 100%;
   background-color: var(--c-background-transparent);
   backdrop-filter: blur(6px);
+  z-index: 999;
 }
 
 .navbar {
@@ -49,6 +66,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: solid 1px transparent;
+  transition: border-bottom 0.5s;
+}
+
+.navbar--border {
+  border-bottom: solid 1px var(--c-border);
 }
 
 .title {

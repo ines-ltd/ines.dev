@@ -4,6 +4,7 @@ import Hero from './components/Hero.vue'
 import Services from './components/Services.vue'
 import Team from './components/Team.vue'
 import Testimonials from './components/Testimonials.vue'
+import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
 
 const settings = {
@@ -14,12 +15,13 @@ const settings = {
 
 <template>
   <div class="layout">
-    <Header :title="settings.title"></Header>
+    <Header :title="settings.title" />
     <div class="content">
-      <Hero :tagline="settings.tagline"></Hero>
+      <Hero :tagline="settings.tagline" />
       <Services />
       <Team />
-      <Testimonials></Testimonials>
+      <Testimonials />
+      <Contact />
     </div>
     <Footer></Footer>
   </div>

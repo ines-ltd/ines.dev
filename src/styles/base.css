@@ -109,16 +109,6 @@ button:focus:not(:focus-visible) {
   outline: none !important;
 }
 
-input:focus,
-textarea:focus,
-select:focus {
-  outline: none;
-}
-
-input {
-  background-color: transparent;
-}
-
 input[type='number'] {
   -moz-appearance: textfield;
 }
